@@ -1,77 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Form</title>
     <script
-    src="https://kit.fontawesome.com/6d7b554f88.js"
-    crossorigin="anonymous"
-  ></script>
-  <link rel="stylesheet" href="./styles/main.css">
-</head>
-<body>
-    <header><h1>Personal Form</h1></header>
-        <main><fieldset class="fieldset__2">
-      <legend class="fieldset__2--legend">
-        <i class="fa-solid fa-keyboard fieldset__2--iconKeyboard"></i>
-        <h2 class="fieldset__2--title">Rellena</h2>
-        <i class=" fa-solid fa-rocket fieldset__2--iconArrow"></i>
-      </legend>
-      <div class="js_content_fill fieldset__2--div collapsed">
-        <label class="label" for="firstAndSecondName">Nombre completo</label>
-        <input
-          placeholder="Ej: Sally Jill"
-          type="text"
-          name="firstAndSecondName"
-          id="firstAndSecondName"
-          class="fieldset__2--input"
-        />
-        <label class="label" for="work">Puesto</label>
-        <input
-          placeholder="Ej: Front-end unicorns"
-          type="text"
-          name="work"
-          id="work"
-          class="fieldset__2--input js_job"
-        />
-      
-        <label class="label" for="email">Email</label>
-        <input
-          placeholder="Ej: sallyhill@gmail.com"
-          type="email"
-          name="email"
-          id="email"
-          class="fieldset__2--input"
-        />
-        <label class="label" for="tel">Teléfono</label>
-        <input
-          placeholder="Ej. 555-55-55-55"
-          type="tel"
-          name="tel"
-          id="tel"
-          class="fieldset__2--input"
-        />
-        <label class="label" for="linkedin">LinkedIn</label>
-        <input
-          placeholder="Ej: https://linkedin.com/manuelagarciayebra"
-          type="url"
-          name="linkedin"
-          id="linkedin"
-          class="fieldset__2--input"
-        />
-        <label class="label" for="github">Github</label>
-        <input
-          placeholder="Ej: https://github.com/manuelagarciayebra"
-          type="text"
-          name="github"
-          id="github"
-          class="fieldset__2--input"
-        />
-      </div>
-    </div>
-    </fieldset>
-</main>
-</body>
+      src="https://kit.fontawesome.com/6d7b554f88.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header class="main__header">
+      <h1 class="main__header--tittle">Your Personal Form</h1>
+    </header>
+    <main>
+      <form action="">
+        <fieldset class="fieldset__1">
+          <legend class="fieldset__1--legend">
+            <i class="fa-solid fa-keyboard fieldset__1--icon"></i>
+            <h2 class="fieldset__1--title">Rellena</h2>
+          </legend>
+          <label for="firstAndSecondName">Nombre Completo</label>
+          <input
+            placeholder="Ej: Manuela Garcia Yebra"
+            type="text"
+            name="firstAndSecondName"
+            id="firstAndSecondName"
+            class="fieldset__1--input"
+          />
+          <label for="work">Puesto</label>
+          <input
+            placeholder="Ej: Frontend Unicorn"
+            type="text"
+            name="work"
+            id="work"
+            class="fieldset__1--input js_job"
+          />
+          <label for="email">Email</label>
+          <input
+            placeholder="Ej: manuela.garcia@bosonit.com"
+            type="email"
+            name="email"
+            id="email"
+            class="fieldset__1--input"
+          />
+          <label for="tel">Teléfono</label>
+          <input
+            placeholder="Ej. 555-55-55-55"
+            type="tel"
+            name="tel"
+            id="tel"
+            class="fieldset__1--input"
+          />
+          <label for="github">Github</label>
+          <input
+            placeholder="Ej: https://github.com/manuelagarciayebra"
+            type="text"
+            name="github"
+            id="github"
+            class="fieldset__1--input"
+          />
+          <label for="age">Edad</label>
+          <input
+            placeholder="Ej: 28"
+            type="number"
+            name="number"
+            id="number"
+            class="fieldset__1--input"
+          />
+        </fieldset>
+        <fieldset class="fieldset__2">
+          <legend class="fieldset__2--legend">
+            <i class="fa-solid fa-check fieldset__2--icon"></i>
+            <h2 class="fieldset__2--title">Selecciona</h2>
+          </legend>
+          <p>¿A qué te dedicas?</p>
+          <input
+            type="radio"
+            id="estudio"
+            name="fav_language"
+            value="estudio"
+          />
+          <label for="estudio">Estudio</label>
+          <input
+            type="radio"
+            id="trabajo"
+            name="fav_language"
+            value="trabajo"
+          />
+          <label for="trabajo">Trabajo</label>
+          <input
+            type="radio"
+            id="disfruto"
+            name="fav_language"
+            value="disfruto"
+          />
+          <label for="disfruto">Disfruto</label>
+          <p>¿Qué te gustaría aprender?</p>
+          <div id="wrapper">
+            <label><input type="checkbox" name="frontend" />Frontend</label>
+            <label><input type="checkbox" name="backend" />Backend</label>
+            <label><input type="checkbox" name="fullstack" />Fullstack</label>
+          </div>
+        </fieldset>
+      </form>
+      <section class="main__sectionQuestion">
+        <h2 class="main__sectionQuestion--tittle">
+          ¿Alguna duda o sugerencia?
+        </h2>
+        <form action="">
+          <textarea
+            id="main__sectionQuestion--textarea"
+            name="comment"
+            placeholder="Escribe aquí tu comentario..."
+          >
+          </textarea>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
