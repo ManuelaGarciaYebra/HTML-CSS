@@ -58,9 +58,21 @@ body {
     flex-direction: column;
 }
 .main__sectionQuestion {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 #main__sectionQuestion--textarea {
     width: 500px;
     height: 100px;
 }
+
+.submit-button{
+    height: 48px;
+    width: 176px;
+    background-color: grey
+}
+.submit-button:hover {
+    background-color: rosybrown
+  }
