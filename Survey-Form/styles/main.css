@@ -1,0 +1,49 @@
+.fieldset__2 {
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: solid 1px #d8d8d8;
+}
+  
+.fieldset__2--title {
+    text-transform: uppercase;
+    margin-left: 10px;
+    width: 100%;
+    font-weight: 600px;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.fieldset__2-input {
+    border: solid 1px;
+    height: 30px;
+    margin: 7px 0 20px;
+}
+  
+.fieldset__2--iconKeyBoard {
+    width: 21px;
+    height: 18px;
+}
+.fieldset__2--iconArrow { 
+    width: 16px;
+    height: 18px;
+}
+
+.fieldset__2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+}
+  
+.fieldset__2--legend {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    margin: 20px 0 25px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.main {
+    width: 100%;
+    background-image: linear-gradient(to orange, grey, white 9%);
+  }
